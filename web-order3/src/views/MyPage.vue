@@ -34,7 +34,8 @@ a {
 }
 
 .container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     max-width: 460px;
     margin: auto;
     padding: 1rem;

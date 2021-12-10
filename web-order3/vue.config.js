@@ -2,7 +2,7 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {   //  api 요청 처리 주소
-                target: 'http://localhost:3000/api',
+                target: 'http://localhost:3000/',
                 changeOrigin: true,
                 pathRewrite: {
                     '^/api': ''

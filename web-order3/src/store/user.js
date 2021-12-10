@@ -52,8 +52,8 @@ export default {
         },
         maskedUser: function(state, payload = {}) {
             console.log('payload on maskedUser mutation: ', payload);
-            const maskedAge = payload.maskedAge.replace((/^(.{4})/), "$1. ");
-            const maskedPhone = payload.maskedPhone;
+            const maskedAge = payload.maskedAge.replace(/^(.{4})/, "$1. ");
+            const maskedPhone = payload.maskedPhone.replace(/^(.{3})/, "$1 - ");
             state.maskedUser.maskedAge = maskedAge;
             state.maskedUser.maskedPhone = maskedPhone;
             console.log('state on maskedUser: ', state.maskedUser);

@@ -1,16 +1,18 @@
 <template>
-    <div class='userInfo'>
+    <div class='infoAccount'>
         <div class='infoTitle'>
             <p>계정 정보 &nbsp;&nbsp; ></p>
         </div>
         <div class='infoBody'>
             <p>{{ getUserId }}</p>
+            <div class='router'>
                 <router-link to='/modify' v-slot='{href, route, navigate}'>
                     <button :href='href' @click='navigate' class='button'>
                         {{ route.ModifyForm }}
                             <fa class='fa-body-icon' icon='user-cog' />
                     </button>
             </router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -55,7 +57,7 @@ a {
     font-weight: bold;
 }
 
-.userInfo {
+.infoAccount {
     padding: 0px 5px;
     border: 1px solid lightgrey;
     text-align: left;
