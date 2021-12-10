@@ -61,10 +61,6 @@ a {
     cursor: pointer;
 }
 
-.button:hover {
-    filter: brightness(97%);
-}
-
 .pageTitle {
     margin: 5px 0px;
     text-align: left;
